@@ -9,4 +9,6 @@
 - Build image
 - `docker build -t myimage .`
 - Run container
-- `docker run -d --name mycontainer -p 8000:80 myimage`
+- `docker run -e DB_USER -e DB_PASSWORD -e DB_HOST -e DB_NAME -d --name mycontainer -p 8000:80 myimage`
+- Run container with network access
+- `docker run --network=bridge -e DB_USER -e DB_PASSWORD -e DB_HOST="192.168.0.105" -e DB_NAME -d --name mycontainer -p 8000:80 myimage`
