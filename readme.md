@@ -1,6 +1,11 @@
 # Fastapi with docker
 
 ## Steps
+- Set environment variable
+    - DB_USER
+    - DB_PASSWORD
+    - DB_HOST
+    - DB_NAME
 - Build image
 - `docker build -t myimage .`
 - Run container
